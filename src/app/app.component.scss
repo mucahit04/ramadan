@@ -1,7 +1,7 @@
 .box-item{
     height: 8vh;
     width: 8vw;
-    box-shadow: rgba(240, 240, 241, 0.25) 0px 30px 60px -12px, rgba(207, 204, 204, 0.3) 0px 18px 36px -18px;
+    box-shadow: rgba(240, 240, 247, 0.25) 0px 30px 60px -12px, rgba(245, 243, 243, 0.3) 0px 18px 36px -18px;
     border-radius: 5px;
     color: white;
     display: flex;
@@ -30,11 +30,11 @@
     overflow: hidden;
 }
 
-body{
+html,body{
     width: 100vw;
     height: 100vh;
     text-align: center;
-    overflow: hidden;
+    overflow-y: hidden;
     margin: 0;
     padding: 0;
     background-color: red;
@@ -44,6 +44,8 @@ body{
     background-image: url('https://cdn.pixabay.com/photo/2022/03/27/03/16/islamic-7093979_1280.jpg');
     background-size: cover;
     text-align: center;
+    width: 100vw;
+    height: 100vh;
 }
 
 .title{
@@ -59,14 +61,36 @@ body{
 }
 @media only screen and (width: 1180px) and (height: 746px) {}
 @media only screen 
-    and (max-width: 600px){
+    and (max-width: 400px){
 
         .grid-boxes{
             width: 80vw;
             margin: auto;
+            grid-template-columns: repeat(auto-fit, 4rem);
         }
         .box-item{
-            height: 10vh;
-            width: 10vw;
+            height: 4rem;
+            width: 4rem;
+
+            h2{
+                font-size: 2rem;
+            }
+        }
+     }
+@media only screen 
+    and (min-width:400px) and (max-width: 600px) {
+
+        .grid-boxes{
+            width: 80vw;
+            margin: auto;
+            grid-template-columns: repeat(auto-fit, 6rem);
+        }
+        .box-item{
+            height: 5rem;
+            width: 5rem;
+
+            h2{
+                font-size: 3rem;
+            }
         }
      }
