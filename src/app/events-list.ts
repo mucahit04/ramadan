@@ -3,88 +3,88 @@ export const dayList = [
         event: '3 Euro harclik'
     },
     {   count: 2,
-        event: '3 Euro harclik'
+        event: 'Surprizli top'
     },
     {   count: 3,
-        event: '3 Euro harclik'
+        event: 'UNO gecesi'
     },
     {   count: 4,
-        event: '3 Euro harclik'
+        event: '2 Euro harclik'
     },
     {   count: 5,
-        event: '3 Euro harclik'
+        event: 'Kopek ve evi'
     },
     {   count: 6,
-        event: '3 Euro harclik'
+        event: 'Ailecek Nintendo oynama'
     },
     {   count: 7,
-        event: '3 Euro harclik'
+        event: 'Anne kiz bakim gunu'
     },
     {   count: 8,
-        event: '3 Euro harclik'
+        event: 'Cuzdan'
     },
     {   count: 9,
-        event: '3 Euro harclik'
+        event: 'Aile etkinlik saati(sen sec)'
     },
     {   count: 10,
         event: '3 Euro harclik'
     },
     {   count: 11,
-        event: '3 Euro harclik'
+        event: 'Dondurma'
     },
     {   count: 12,
-        event: '3 Euro harclik'
+        event: 'Kupe'
     },
     {   count: 13,
-        event: '3 Euro harclik'
+        event: 'Ailecek kutu oyunu'
     },
     {   count: 14,
-        event: '3 Euro harclik'
+        event: '2 Euro harclik'
     },
     {   count: 15,
-        event: '3 Euro harclik'
+        event: 'Oyuncak'
     },
     {   count: 16,
-        event: '3 Euro harclik'
+        event: 'Taki yapma'
     },
     {   count: 17,
-        event: '3 Euro harclik'
+        event: 'UNO gecesi'
     },
     {   count: 18,
         event: '3 Euro harclik'
     },
     {   count: 19,
-        event: '3 Euro harclik'
+        event: 'Dondurma'
     },
     {   count: 20,
-        event: '3 Euro harclik'
+        event: '2 Euro harclik'
     },
     {   count: 21,
-        event: '3 Euro harclik'
+        event: 'Anne kiz bakim saati'
     },
     {   count: 22,
-        event: '3 Euro harclik'
+        event: 'Oyuncak'
     },
     {   count: 23,
-        event: '3 Euro harclik'
+        event: '2 Euro harclik'
     },
     {   count: 24,
-        event: '3 Euro harclik'
+        event: 'Bir etkinlik(sen sec)'
     },
     {   count: 25,
-        event: '3 Euro harclik'
+        event: 'Ailecek kutu oyunu'
     },
     {   count: 26,
         event: '3 Euro harclik'
     },
     {   count: 27,
-        event: '3 Euro harclik'
+        event: 'Arabada iftar'
     },
     {   count: 28,
-        event: '3 Euro harclik'
+        event: 'Dondurma'
     },
     {   count: 29,
-        event: '3 Euro harclik'
+        event: 'Kiyafet'
     },
     {   count: 30,
         event: '3 Euro harclik'
