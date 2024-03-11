@@ -29,8 +29,8 @@ interface Day {
 export class AppComponent implements OnInit{
   title = 'ramandanCalendar';
   days: Day[] = dayList;
-  colorList: string[] = [ "red", "purple", "darkblue", "turquoise", "yellow", "brown", "orange", "green", "maroon", "chocolate","blueviolet", "deeppink", "dodgerblue", "crimson",
-  "red", "purple", "darkblue", "turquoise", "yellow", "brown", "orange", "green", "maroon", "chocolate","blueviolet", "deeppink", "dodgerblue", "crimson", "gold", "orchid"
+  colorList: string[] = [ "red", "purple", "darkblue", "turquoise", "lime", "brown", "orange", "green", "maroon", "chocolate","blueviolet", "deeppink", "dodgerblue", "crimson",
+  "red", "purple", "darkblue", "turquoise", "lime", "brown", "orange", "green", "maroon", "chocolate","blueviolet", "deeppink", "dodgerblue", "crimson", "gold", "orchid"
 ]
 
   constructor(public dialog: MatDialog){ }
@@ -72,6 +72,7 @@ export class AppComponent implements OnInit{
   }
 
   openDialog(event: string): void {
+    console.log('opened')
     const dialogRef = this.dialog.open(DialogComponent, {
       data: {name: event},
       width: '250px',

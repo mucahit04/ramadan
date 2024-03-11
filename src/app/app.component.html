@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-  <div class="main">
+  <div class="main" >
     <h1 class="title">Ramadan Calendar</h1>
     <div class="grid-boxes">
       <div class="box-item" *ngFor="let day of days" id="{{day.count}}" (click)="onClickDay(day)" [ngStyle]="{'background-color': colorList[day.count -1]}">
@@ -13,6 +6,5 @@
       </div>
   </div>
 </div>
-</body>
-</html>
+
 
