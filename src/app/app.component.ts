@@ -51,7 +51,7 @@ export class AppComponent implements OnInit{
     const hijriToday = hijri.split('Ramadan')[1].split(',')[0].trim();
     const time = new Date().getTime();
     const celebrationTime = new Date().setHours(18, 0);
-    if(day.count >= parseInt(hijriToday) &&  time > celebrationTime){
+    if(day.count < parseInt(hijriToday) || day.count == parseInt(hijriToday) &&  time > celebrationTime){
       this.celebrate(day);
       console.log(hijriToday);
     }
