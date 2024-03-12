@@ -50,31 +50,47 @@ export class AppComponent implements OnInit{
     const hijri = new Intl.DateTimeFormat('en-TN-u-ca-islamic', {day: 'numeric', month: 'long',weekday: 'long',year : 'numeric'}).format(Date.now());
     const hijriToday = hijri.split('Ramadan')[1].split(',')[0].trim();
     const time = new Date().getTime();
-    const celebrationTime = new Date().setHours(18, 30);
+    const celebrationTime = new Date().setHours(18, 0);
     if(day.count == parseInt(hijriToday) &&  time > celebrationTime){
-      this.celebrate(day.event);
+      this.celebrate(day);
       console.log(hijriToday);
     }
   }
 
-  celebrate(event:string) {
-    const duration = 3000; // in milliseconds
-  
-    confetti({
-      particleCount: 200,
-      spread: 260,
-      origin: { y: 0.6 },
-    });
-  
-    // Clear confetti after a certain duration
-    setTimeout(() => confetti.reset(), duration);
-    this.openDialog(event);
+  celebrate(day:Day) {
+    var duration = 5 * 1000;
+    var end = Date.now() + duration;
+
+    (function frame() {
+      // launch a few confetti from the left edge
+      confetti({
+        particleCount: 7,
+        angle: 60,
+        shapes :['star', 'square', 'circle'],
+        spread: 75,
+        origin: { x: 0 }
+      });
+      // and launch a few from the right edge
+      confetti({
+        particleCount: 7,
+        angle: 120,
+        spread: 75,
+        shapes :['star', 'square', 'circle'],
+        origin: { x: 1 }
+      });
+
+      // keep going until we are out of time
+      if (Date.now() < end) {
+        requestAnimationFrame(frame);
+      }
+    }());
+    this.openDialog(day);
   }
 
-  openDialog(event: string): void {
+  openDialog(day: Day): void {
     console.log('opened')
     const dialogRef = this.dialog.open(DialogComponent, {
-      data: {name: event},
+      data: {name: day.event, color:this.colorList[day.count -1]},
       width: '250px',
       enterAnimationDuration: 300,
       exitAnimationDuration : 300

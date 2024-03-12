@@ -12,7 +12,7 @@ import {MatButtonModule} from '@angular/material/button';
 
 
 export interface DialogData {
-  animal: string;
+  color: string;
   name: string;
 }
 
