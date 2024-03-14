@@ -1,18 +1,17 @@
 .box-item{
     height: 8vh;
     width: 8vw;
-    box-shadow: rgba(240, 240, 247, 0.25) 0px 30px 60px -12px, rgba(245, 243, 243, 0.3) 0px 18px 36px -18px;
-    border-radius: 5px;
+    box-shadow: rgba(234, 232, 232, 0.582) 0px 2px 6px;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 5px;
     
 
     h2{
         text-align: center;
         font-size: 3vw;
-        box-shadow: rgba(240, 240, 247, 0.25) 0px 30px 60px -12px, rgba(245, 243, 243, 0.3) 0px 18px 36px -18px;
     }
     
 }
@@ -21,7 +20,19 @@
     cursor: pointer;
 };
 
+button{
+    text-decoration: none;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
 .grid-boxes{
+    padding: 0.5rem;
     width: 50%;
     margin: auto;
     display: grid;
@@ -71,7 +82,7 @@ html,body{
         }
      }
 @media only screen 
-    and (min-width:400px) and (max-width: 600px) {
+    and (min-width: 400px) and (max-width: 600px) {
 
         .grid-boxes{
             width: 80vw;

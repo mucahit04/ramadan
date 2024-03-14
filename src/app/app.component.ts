@@ -53,12 +53,11 @@ export class AppComponent implements OnInit{
     const celebrationTime = new Date().setHours(18, 0);
     if(day.count < parseInt(hijriToday) || day.count == parseInt(hijriToday) &&  time > celebrationTime){
       this.celebrate(day);
-      console.log(hijriToday);
     }
   }
 
   celebrate(day:Day) {
-    var duration = 5 * 1000;
+    var duration = 2 * 1000;
     var end = Date.now() + duration;
 
     (function frame() {
@@ -72,7 +71,7 @@ export class AppComponent implements OnInit{
       });
       // and launch a few from the right edge
       confetti({
-        particleCount: 7,
+        particleCount: 6,
         angle: 120,
         spread: 75,
         shapes :['star', 'square', 'circle'],
